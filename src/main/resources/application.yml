@@ -1,11 +1,11 @@
 server:
   servlet:
     contextPath: /cadastro-service
+
 application:
   name: '@project.artifactId@'
 build:
-  version: '@project.version@'
-  
+  version: '@project.version@'  
 
 spring:
   datasource:
@@ -15,3 +15,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/cadastro_service
     username: postgres
     password: 123
+  jpa.properties.hibernate.format_sql: true
+
+logging:
+   level:
+     org.hibernate.SQL: DEBUG
+     org.hibernate.type.descriptor.sql.BasicBinder: TRACE

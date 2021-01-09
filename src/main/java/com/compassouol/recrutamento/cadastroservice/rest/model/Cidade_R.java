@@ -10,6 +10,21 @@ public class Cidade_R implements Serializable{
 	private String nome;
 	private Estado estado;
 	
+	public Cidade_R id(Long id) {
+		setId(id);
+		return this;
+	}
+	
+	public Cidade_R nome(String nome) {
+		setNome(nome);
+		return this;
+	}
+	
+	public Cidade_R estado(Estado estado) {
+		setEstado(estado);
+		return this;
+	}
+	
 	public Long getId() {
 		return id;
 	}
