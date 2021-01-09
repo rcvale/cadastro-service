@@ -1,0 +1,17 @@
+server:
+  servlet:
+    contextPath: /cadastro-service
+application:
+  name: '@project.artifactId@'
+build:
+  version: '@project.version@'
+  
+
+spring:
+  datasource:
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+    url: jdbc:postgresql://localhost:5432/cadastro_service
+    username: postgres
+    password: 123
