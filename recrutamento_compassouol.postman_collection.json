@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "43e36c0b-456c-4e0a-99fe-331b7e69be96",
+		"name": "recrutamento_compassouol",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cidade",
+			"item": [
+				{
+					"name": "inserir cidade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Amazonas\",\n    \"estado\": \"AM\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cadastro-service/rest/cidade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadastro-service",
+								"rest",
+								"cidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pesquisar cidade",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"juiz de fora\",\n    \"estado\": \"M\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cadastro-service/rest/cidade?nome=&estado=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadastro-service",
+								"rest",
+								"cidade"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": ""
+								},
+								{
+									"key": "estado",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cliente",
+			"item": [
+				{
+					"name": "inserir cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Carlos\",\n    \"sexo\": \"M\",\n    \"dataNascimento\": \"1987-03-10\",\n    \"idade\": \"33\",\n    \"cidade\": {\n        \"id\": 8\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cadastro-service/rest/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadastro-service",
+								"rest",
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Ricardo vale\",\n    \"sexo\": \"M\",\n    \"dataNascimento\": \"1987-03-10\",\n    \"idade\": \"33\",\n    \"cidade\": {\n        \"id\": 7\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cadastro-service/rest/cliente/30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadastro-service",
+								"rest",
+								"cliente",
+								"30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cadastro-service/rest/cliente/35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadastro-service",
+								"rest",
+								"cliente",
+								"35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pesquisar clientes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"juiz de fora\",\n    \"estado\": \"M\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cadastro-service/rest/cliente?id=&nome=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadastro-service",
+								"rest",
+								"cliente"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": ""
+								},
+								{
+									"key": "nome",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

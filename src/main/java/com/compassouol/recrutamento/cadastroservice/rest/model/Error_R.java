@@ -5,11 +5,11 @@ import java.io.Serializable;
 public class Error_R implements Serializable{
 	
 	private int codErro;
-	private String message;
+	private String messagem;
 	
-	public Error_R(int codErro, String message) {
+	public Error_R(int codErro, String messagem) {
 		this.codErro = codErro;
-		this.message = message;
+		this.messagem = messagem;
 	}
 
 	public int getCodErro() {
@@ -20,12 +20,12 @@ public class Error_R implements Serializable{
 		this.codErro = codErro;
 	}
 
-	public String getMessage() {
-		return message;
+	public String getMessagem() {
+		return messagem;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
+	public void setMessagem(String messagem) {
+		this.messagem = messagem;
 	}
 
 }

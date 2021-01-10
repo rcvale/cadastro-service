@@ -8,6 +8,8 @@ build:
   version: '@project.version@'  
 
 spring:
+  database:
+    driverClassName: org.postgresql.Driver
   datasource:
     hikari:
       connectionTimeout: 20000

@@ -3,10 +3,10 @@ package com.compassouol.recrutamento.cadastroservice.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
-import com.compassouol.recrutamento.cadastroservice.model.Cidade;
+import com.compassouol.recrutamento.cadastroservice.model.Cliente;
 
-public interface CidadeRepository extends JpaRepository<Cidade, Long>, JpaSpecificationExecutor<Cidade>  {	
-
+public interface ClienteRepository extends JpaRepository<Cliente, Long>, JpaSpecificationExecutor<Cliente>  {	
+	
 	
 	
 }

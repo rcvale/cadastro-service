@@ -25,6 +25,7 @@ public class Cidade_R implements Serializable{
 		return this;
 	}
 	
+	
 	public Long getId() {
 		return id;
 	}

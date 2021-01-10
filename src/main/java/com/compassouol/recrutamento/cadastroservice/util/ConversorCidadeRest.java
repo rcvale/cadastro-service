@@ -12,9 +12,13 @@ public class ConversorCidadeRest extends ConversorRest<Cidade_R, Cidade>{
 	@Override
 	public Cidade_R toRest(Cidade entity) {
 		if(entity!=null) {
-			Cidade_R cidade_R = new Cidade_R().nome(entity.getNome()).estado(entity.getEstado());
-			if(entity.getId()!=null)
-				cidade_R.setId(entity.getId());
+			Cidade_R cidade_R = new Cidade_R()
+					.id(entity.getId())
+					.nome(entity.getNome())
+					.estado(entity.getEstado());
+			
+//			if(entity.getId()!=null)
+//				cidade_R.setId(entity.getId());
 			return cidade_R;
 		}
 		return null;

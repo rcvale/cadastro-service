@@ -37,7 +37,7 @@ public class CidadeRest {
 	}
 	
 	@GetMapping()
-	public PesquisaRetorno_R<Cidade_R> pesquisarCidades(@RequestParam(name = "nome", required = false) String nome, @RequestParam(name = "estado", required = false) Estado estado) {
+	public PesquisaRetorno_R<Cidade_R> findCidades(@RequestParam(name = "nome", required = false) String nome, @RequestParam(name = "estado", required = false) Estado estado) {
 		Cidade search = conversor.toEntity(new Cidade_R().nome(nome).estado(estado));
 		List<Cidade> list = cidadeService.find(search);	
 		return conversor.toListRest(list);
