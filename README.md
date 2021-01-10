@@ -11,7 +11,7 @@ Para alterar o servidor do banco, senha e nome do database basta alterar as prop
 
 
 ## Postman
-Foi adicionado também dentro do projeto a colection do postman para realizar os testes dos métodos rest. O arquivo de chama recrutamento_compassouol.postman_collection.json.
+Foi adicionado também dentro do projeto a colection do postman para realizar os testes dos métodos rest. O arquivo se chama recrutamento_compassouol.postman_collection.json.
 
 Só importar para dentro do postman que será criado a colection com os métodos abaixo:
 
