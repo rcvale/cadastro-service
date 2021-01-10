@@ -7,7 +7,7 @@ A projeto foi desenvolvido utilizando o banco de dados PostgreSQL. Foi testado n
 
 Para utilizar o projeto deve ser criado o database e executar o script de banco que está dentro do projeto. O arquivo se chama scriptbanco.sql. Será criado as tabelas "cidade" e "cliente".
 
-Para alterar o servidor do banco, senha e nome do database basta alterar as propriedades do arquivo application.yml. No meu ambiente o banco se chamada "cadastro_service", rodando localmente e com senha 123
+Para alterar o servidor do banco, senha e nome do database basta alterar as propriedades do arquivo application.yml. No meu ambiente o banco se chama "cadastro_service", rodando localmente e com senha 123
 
 
 ## Postman
