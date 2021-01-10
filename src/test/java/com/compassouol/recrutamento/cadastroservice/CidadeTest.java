@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.mockito.Spy;
+import org.springframework.boot.jdbc.EmbeddedDatabaseConnection;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.util.ReflectionTestUtils;
@@ -17,9 +19,8 @@ import com.compassouol.recrutamento.cadastroservice.model.Cidade;
 import com.compassouol.recrutamento.cadastroservice.repository.CidadeRepository;
 import com.compassouol.recrutamento.cadastroservice.service.CidadeService;
 
-@SpringBootTest(classes = CidadeTest.class)
-//@SpringBootTest
-//@AutoConfigureTestDatabase(connection = EmbeddedDatabaseConnection.H2)
+@SpringBootTest
+@AutoConfigureTestDatabase(connection = EmbeddedDatabaseConnection.H2)
 public class CidadeTest {
 
 	@Spy
