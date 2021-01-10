@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"nome\": \"Amazonas\",\n    \"estado\": \"AM\"\n}",
+							"raw": "{\n\t\"nome\": \"Manaus\",\n    \"estado\": \"AM\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
